@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Inter, system-ui, sans-serif;
+	margin-inline: auto;
+	background-color: var(--background-color);
+	color: var(--color-text);
+	line-height: 1.5;
+}
+
+nav ul {
+	list-style: none;
+	margin-block: 0;
+	padding-left: 0;
+}
+
+main {
+	max-width: 1400px;
+	margin-inline: auto;
+}
+
+@media screen and (width < 1400px) {
+	main {
+		padding-inline: 3rem;
+	}
+}

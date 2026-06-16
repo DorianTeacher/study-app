@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
-import Menu from '../../components/menu/Menu';
 
-const About = () => {
+const Test = () => {
 	return (
 		<>
-			<Menu />
-			<h1>ABOUT</h1>
+			<h1>TESTS</h1>
 			<Link to='/'>
 				<button>TO HOME</button>
 			</Link>
@@ -13,4 +11,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Test;

@@ -1,11 +1,12 @@
-import Menu from '../../components/menu/Menu';
-
+import { RiGraduationCapLine } from 'react-icons/ri';
+import containerStyles from '../../styles/common/container.module.css';
+import iconStyles from '../../styles/common/icons.module.css';
 const Home = () => {
 	return (
-		<>
-			<Menu />
-			<h1>HOME</h1>
-		</>
+		<div className={containerStyles.containerXL}>
+			<RiGraduationCapLine className={iconStyles.cap} />
+			<h1>Welcome to Study & Test</h1>
+		</div>
 	);
 };
 

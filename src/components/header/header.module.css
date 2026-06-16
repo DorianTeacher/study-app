@@ -1,0 +1,17 @@
+.header {
+	background-color: var(--header-background);
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1400px;
+	margin-inline: auto;
+}
+
+@media screen and (width < 1400px) {
+	.header-content {
+		padding-inline: 3rem;
+	}
+}

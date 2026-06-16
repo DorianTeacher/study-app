@@ -1,0 +1,26 @@
+.menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	width: max-content;
+	padding-inline: 2rem;
+}
+
+.menu-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0.25rem 0.75rem;
+	border-radius: 0.5rem;
+	background-color: #fafafa;
+}
+
+.menu-item > * {
+	color: #171717;
+}
+
+.menu-link {
+	color: #171717;
+	text-decoration: none;
+}

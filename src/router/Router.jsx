@@ -1,16 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
-import About from '../pages/about/About';
+import MainLayout from '../layouts/Mainlayout';
+import Blocks from '../pages/blocks/Blocks';
 import Home from '../pages/home/Home';
-import User from '../pages/user/User';
+import Test from '../pages/test/Test';
 
 const Router = () => {
 	return (
 		<Routes>
-			<Route path='/' element={<Home />} />
-			<Route path='/about' element={<About />} />
-			<Route path='/macarena' element={<User name='macarena' />} />
-			<Route path='/xavi' element={<User name='xavi' />} />
-			<Route path='/diego' element={<User name='diego' />} />
+			<Route element={<MainLayout />}>
+				<Route path='/' element={<Home />} />
+				<Route path='/blocks' element={<Blocks />} />
+				<Route path='/test' element={<Test />} />
+			</Route>
 		</Routes>
 	);
 };
